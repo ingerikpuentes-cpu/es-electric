@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ES Electric</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    body { line-height: 1.6; color: #333; }
+    header { background: #0f4c81; color: #fff; padding: 20px 40px; }
+    header h1 { font-size: 28px; }
+    nav { margin-top: 10px; }
+    nav a { color: #fff; margin-right: 20px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+
+    section { padding: 60px 40px; }
+    .hero { background: #f4f6f8; text-align: center; }
+    .hero h2 { font-size: 36px; margin-bottom: 15px; }
+    .hero p { font-size: 18px; max-width: 800px; margin: auto; }
+
+    .services { background: #fff; }
+    .services h2, .contact h2 { text-align: center; margin-bottom: 40px; font-size: 30px; }
+    .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+    .card { border: 1px solid #ddd; border-radius: 8px; padding: 25px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    .card h3 { margin-bottom: 10px; color: #0f4c81; }
+
+    .contact { background: #f4f6f8; }
+    form { max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 15px; }
+    input, textarea { padding: 12px; border: 1px solid #ccc; border-radius: 5px; }
+    button { padding: 12px; background: #0f4c81; color: #fff; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; }
+    button:hover { background: #0c3b64; }
+
+    footer { background: #222; color: #fff; text-align: center; padding: 20px; }
+
+    .whatsapp { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: #fff; padding: 15px 18px; border-radius: 50%; text-decoration: none; font-size: 20px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="display:flex; align-items:center; gap:15px;">
+      <!-- Reemplaza logo.png por el archivo de tu logo -->
+      <img src="logo.png" alt="Logo ES Electric" style="height:70px;" />
+      <h1>ES Electric</h1>
+    </div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <h2>Líder en Instalaciones y Mantenimiento</h2>
+    <p>
+      Brindamos servicios profesionales de electricidad, mantenimiento residencial y comercial,
+      instalación de minisplits y unidades paquete, con atención rápida, segura y de calidad.
+    </p>
+    <p style="margin-top:15px; font-size:18px; font-weight:bold;">
+      📍 Atención residencial y comercial en Cd. Juárez
+    </p>
+    <ul style="list-style:none; margin-top:25px; font-size:17px;">
+      <li>✔ Atención rápida</li>
+      <li>✔ Trabajo garantizado</li>
+      <li>✔ Técnicos capacitados</li>
+    </ul>
+    <a href="https://wa.me/526572503809?text=Hola%20quiero%20una%20cotización%20de%20servicios%20eléctricos%20y%20mantenimiento" target="_blank" style="display:inline-block; margin-top:30px; padding:15px 30px; background:#25D366; color:#fff; font-size:18px; font-weight:bold; text-decoration:none; border-radius:8px;">💬 Cotiza por WhatsApp</a>
+  </section>
+
+  <section id="servicios" class="services">
+    <h2>Nuestros Servicios</h2>
+    <div class="service-grid">
+      <div class="card">
+        <h3>Electricidad Residencial y Comercial</h3>
+        <p>Instalaciones eléctricas, reparaciones, centros de carga, contactos, apagadores y detección de fallas.</p>
+      </div>
+      <div class="card">
+        <h3>Mantenimiento Residencial</h3>
+        <p>Servicios preventivos y correctivos para mantener tu hogar en óptimas condiciones.</p>
+      </div>
+      <div class="card">
+        <h3>Instalación de Minisplits</h3>
+        <p>Instalación profesional, mantenimiento y revisión de equipos de aire acondicionado tipo minisplit.</p>
+      </div>
+      <div class="card">
+        <h3>Unidades Paquete</h3>
+        <p>Instalación y mantenimiento de unidades paquete para uso residencial y comercial.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <h2>Contacto</h2>
+    <p style="text-align:center; margin-bottom:20px; font-size:18px;">
+      📞 Teléfono: <strong>656 761 9296</strong><br />
+      💬 WhatsApp: <strong>657 250 3809</strong>
+    </p>
+    <form>
+      <input type="text" placeholder="Nombre" required />
+      <input type="email" placeholder="Correo electrónico" required />
+      <textarea rows="4" placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 ES Electric. Todos los derechos reservados.</p>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/526572503809?text=Hola%20quiero%20una%20cotización%20de%20servicios%20eléctricos%20y%20mantenimiento" target="_blank">💬</a>
+
+</body>
+</html>
